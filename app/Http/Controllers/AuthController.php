@@ -19,7 +19,7 @@ class AuthController extends Controller
             'jenis_kelamin' => 'required',
             'nomor_telepon' => 'required',
             'alamat' => 'nullable',
-            'foto' => 'nullable|mimes:jpg,jpeg,png|max:4048',
+            'foto' => 'nullable|file|mimes:jpg,jpeg,png,gif|max:4096',
             'username' => 'required|string|unique:users',
             'password' => 'required|string|min:8',
         ]);

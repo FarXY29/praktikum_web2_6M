@@ -10,7 +10,7 @@
         </div>
         @endforeach
     </div>
-    <form action="{{route('register.post')}}" method="POST">
+    <form action="{{route('register.post')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group mt-3">
             <label for="">Nama</label>
